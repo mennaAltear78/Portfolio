@@ -20,8 +20,8 @@ function Home() {
           Welcome to My Portfolio</h1>
         <h1 className="dark:text-white text-gray-600 text-3xl mt-3 sm:ml-0 ml-5  ">
           <Typewriter
-            words={["Hello, world!","react.js","three.js","prompt engineer"]}
-            loop={5} 
+            words={["Hello, world!","Front-end Developer","React.js Enthusiast","Building Interactive UIs","API Integration Expert","Passionate About Three.js & 3D Web Learning"]}
+            loop={100} 
             cursor
             cursorStyle="_"
             typeSpeed={50}

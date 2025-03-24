@@ -7,7 +7,7 @@ import Contact from './Pages/Contact'
 
 function App() {
   return (
-    <main className="dark:bg-black-500 bg-white">
+    <main className="dark:bg-black-500 bg-white ">
       <Router>
         <NavBar />
         <Routes>

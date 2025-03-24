@@ -29,11 +29,11 @@ useEffect(() => {
         to="./"
         className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
       >
-        <p className="bg-gradient-to-r from-purple-200 via-purple-400 to-purple-600 text-transparent bg-clip-text">
+        <p className=" bg-gradient-to-r from-purple-200 via-purple-400 to-purple-600 text-transparent bg-clip-text">
           MA
         </p>
       </NavLink>
-      <nav className="gap-10 p-3 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md">
+      <nav className=" text-black gap-10 p-3 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md">
         <NavLink
           to="/about"
           className={({ isActive }) =>

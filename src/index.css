@@ -11,7 +11,7 @@
 
 body {
   font-family: "Work Sans", sans-serif;
-  /* background-color: rgb(0, 0, 0); */
+
 }
 
 body:has(.card[data-color="blue"]:hover) {
@@ -181,4 +181,9 @@ body:has(.card[data-color="green"]:hover) {
   border: #fff;
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+}
+@layer base {
+  body {
+    @apply bg-white text-black dark:bg-black-500 dark:text-white;
+  }
 }

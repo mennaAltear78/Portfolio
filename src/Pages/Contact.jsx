@@ -3,27 +3,20 @@ import React, { Suspense, useRef, useState } from 'react'
 import ContactImag from '../assets/contact.png';
 import emailjs from '@emailjs/browser'
 function Contact() {
-  const [currentAnimation, setCurrentAnimation] = useState('idle ')
+  
   const [form, setForm] = useState({ name: '', email: '', message: '' })
   const [isloading, setIsLoading] = useState(false)
   const formRef=useRef()
-  const handleBlur = () => {
-    setCurrentAnimation('idle')
-  }
-  const handleFocus = () => {
-    setCurrentAnimation('idle')
-  }
   const handleChange = ({target:{name,value}}) => {
-    setCurrentAnimation('walk')
+   
     setForm({...form ,[name]:value})
-    console.log(form);
+    
     
   }
   const handleOnsumbit = (e) => {
     e.preventDefault()
     setIsLoading(true)
-    setCurrentAnimation('hit')
-    //it is a ascynchrons operation
+  
    
     emailjs.sendForm(
       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -40,11 +33,11 @@ function Contact() {
       console.error("Failed to send email:", err);
     });
     setTimeout(() => {
-      setCurrentAnimation('idle')
+   
     }, 4000);
   }
   return (
-    <section className='relative h-screen w-[100vw] dark:bg-black-500  flex lg:flex-row flex-row  max-container'>
+    <section className='relative h-screen w-[100vw] dark:bg-black-500   flex lg:flex-row flex-row  max-container'>
       <div >
         <h1 className='dark:text-white head-text'>
           Get in touch
@@ -61,8 +54,6 @@ function Contact() {
             placeholder='Menna'
             required
             onChange={handleChange}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
             value={form.name}
           />
           <label className='  dark:text-white  flex justify-center font-medium items-center text-[24px] align-super mb-[-10px]'>
@@ -76,8 +67,6 @@ function Contact() {
             placeholder='Menna@gmail.com'
             required
             onChange={handleChange}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
             value={form.email}
           />
           <label className='dark:text-white flex justify-center font-medium items-center text-[24px] align-super mb-[-10px]'>
@@ -88,8 +77,6 @@ function Contact() {
             rows={5}
             required
             onChange={handleChange}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
             value={form.message}
             placeholder='write your thoughts here...' className='shadow-lg p-3  w-[500px] border focus:outline-none border-gray-300 focus:border-purple-200 focus:ring-2 focus:ring-purple-900 rounded-md' />
           <button disabled={isloading} className='transform scale-95 transition-transform duration-500 hover:scale-100 w-[520px] h-[45px] bg-gradient-to-br from-purple-800  via-purple-250 to-purple-400  rounded text-white ml-[-9px]  '>
@@ -101,7 +88,7 @@ function Contact() {
       <div>
           <img className='ml-[150px] animate-float mt-[100px]' src={ContactImag}/>
         </div>
-    </section>
+ </section>
   )
 }
 
