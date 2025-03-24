@@ -193,7 +193,7 @@ export const projects = [
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
-        name: 'Turing Machine Simulator',
+        name: 'Turing Machine Simulator (java)',
         description: 'Demonstrating the working of a Turing Machine. Learning Theoretical Computation: Understanding concepts of computation, state transitions, and tape manipulation.',
         link: 'https://github.com/mennaAltear78/Information-Retrieval-',
     }
