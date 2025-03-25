@@ -165,7 +165,7 @@ export const projects = [
         theme: 'btn-back-green',
         name: 'Vendor (React.js)',
         description: 'Vendor Application – A management system for multiple hotels (Work in Progress). Completed authentication with access & refresh tokens, implemented Axios interceptors for secure API requests, and added vendor creation functionality. Features React Router for navigation and styled with CSS Modules & Tailwind CSS.',
-        link: 'https://vendor-z9sx.vercel.app/',
+        link: 'https://vendor-dun-kappa.vercel.app',
     },
     {
         iconUrl: car,
