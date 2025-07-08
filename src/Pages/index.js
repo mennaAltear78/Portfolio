@@ -3,6 +3,8 @@ import screen from "../assets/Screenshot 2025-03-24 135635.png"
 import Authen from "../assets/Screenshot 2025-03-24 140848.png"
 import ThreeD from "../assets/Screenshot 2025-03-18 164508 (1).png"
 import chatbot from "../assets/Screenshot 2025-03-24 151536.png"
+import handpose from "../assets/handpose.jpg"
+import todo from "../assets/todo.jpg"
 
 import {
     
@@ -30,8 +32,10 @@ import {
     tailwindcss,
     threads,
     typescript,
-    java
+    java,
+    // prizma
 } from "../assets/icons";
+import { image } from "framer-motion/client";
 
 export const skills = [
     {
@@ -66,12 +70,16 @@ export const skills = [
         name: "Java",
         type: "",
     },
-    // {
-    //     imageUrl: motion,
-    //     name: "Framer Motion",
-    //     type: "Animation",
-    // },
-
+    {
+        imageUrl: motion,
+        name: "Framer Motion",
+        type: "Animation",
+    },
+    {
+        imageUrl: mongodb,
+        name: "mongodb",
+        type: "",
+    },
     {
         imageUrl: nextjs,
         name: "Next.js",
@@ -84,10 +92,15 @@ export const skills = [
         type: "Frontend",
     },
 
-    // {
-    //     imageUrl: sass,
-    //     name: "Sass",
-    //     type: "Frontend",
+    {
+        imageUrl: redux,
+        name: "redux",
+        type: "",
+    },
+    //   {
+    //     imageUrl: prizma,
+    //     name: "redux",
+    //     type: "",
     // },
     {
         imageUrl: tailwindcss,
@@ -151,14 +164,7 @@ export const socialLinks = [
 ];
 
 export const projects = [
-    {
-        iconUrl:summiz,
-        imge:screen,
-        theme: 'btn-back-red',
-        name: 'Tourism website react (React.js)',
-        description: 'Static Website with Routing & Dark/Light Mode – A simple static website with React Router for navigation and Dark/Light mode using useContext for state management and CSS Modules for styling.',
-        link: 'https://tourism-web-react-js.vercel.app',
-    },
+
     {
         iconUrl: snapgram ,
         imge:Authen,
@@ -175,15 +181,41 @@ export const projects = [
         description: 'The project includes interactive elements such as dark/light mode, sky and plane movements, and a popup message when reaching a specific island. Since the 3D project was heavy on Vercel and difficult to deploy, You can see more detail in GitHub.',
         link: 'https://github.com/mennaAltear78/3D_Website',
     },
+
     {
+        iconUrl: estate,
+        imge:handpose,
+
+        theme: 'btn-back-black',
+        name: 'Hand Pose recognition (React.js)',
+        description: 'A real-time hand pose estimation app built with React.js, TensorFlow.js, and JavaScript. The app detects hand landmarks from webcam input and renders a dynamic 3D mesh overlay in the browser — all powered by machine learning in the browser.',
+        link: 'https://hand-pose-ai-seven.vercel.app/',
+    },
+    {
+        iconUrl: estate,
+        imge:todo,
+        theme: 'btn-back-yellow',
+        name: 'Full stack ToDo App (Next.js)',
+        description: 'A fullstack ToDo application built with Next.js (App Router) and TypeScript, featuring authentication via Clerk, data validation with Zod, and full CRUD functionality for each user. Tasks are isolated per user and cached on the client using SWR or React Query for optimal performance',
+        link: 'https://github.com/mennaAltear78/TodoList-Full-Stack-.git',
+    }, 
+        {
         iconUrl: estate,
         imge:chatbot,
         theme: 'btn-back-pink',
         name: 'ChatBot (React.js)',
         description: 'Designed and implemented an AI-powered ChatBot using the Gemini API to handle real-time customer queries for a small restaurant, improving service efficiency and user engagement with intelligent and context-aware responses',
         link: 'https://chat-bot-api-eight.vercel.app',
+    },   {
+        iconUrl:summiz,
+        imge:screen,
+        theme: 'btn-back-red',
+        name: 'Tourism website react (React.js)',
+        description: 'Static Website with Routing & Dark/Light Mode – A simple static website with React Router for navigation and Dark/Light mode using useContext for state management and CSS Modules for styling.',
+        link: 'https://tourism-web-react-js.vercel.app',
     },
-    {
+
+        {
         iconUrl: estate,
         theme: 'btn-back-black',
         name: 'Information Retrieval System (java)',

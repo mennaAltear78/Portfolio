@@ -1,0 +1,48 @@
+      <div className={`container ${chatbotToggler && "show-chatbot"}`}>
+        <button id="chatbot_Toggler" onClick={controlToggling}>
+          <span className="material-symbols-rounded buttonstyle">
+            mode_comment
+          </span>
+          <span className="material-symbols-rounded buttonstyle">
+            close
+          </span>
+        </button>
+        <div className="chatbot_popup">
+          {/* chatbot Header */}
+          <div className="chatbotHeader">
+            {/* chatbot Header */}
+            <div className="Header_Info">
+              <ChatBot_Icon />
+              <h1 className="logo_text">Chatbot</h1>
+            </div>
+            <button onClick={() => SetChatbotToggler(prev => !prev)} className="material-symbols-rounded buttonstyle">
+              stat_minus_1
+            </button>
+          </div>
+          {/* chatbot body */}
+
+          <div className="chat_body" ref={chatRef}>
+            <div className="message bot-message">
+              <ChatBot_Icon />
+              <p className="message-text">
+                Hey there <br /> this is Menna's Chatbot, How can I help you?
+              </p>
+            </div>
+            {/* render the chat history dynamically */}
+            {chatHistory.map((chat, index) => (
+              <ChatMeassage key={index} chat={chat} />
+            ))}
+          </div>
+
+          {/* chatbot footer*/}
+          <div className="chatbotFooter">
+            <ChatForm
+              messagesHistory={setChatHistory}
+              generateBotResponse={generateBotResponse}
+              chatHistory={chatHistory}
+              isThinking={isThinking}
+
+            />
+          </div>
+        </div>
+      </div>

@@ -11,6 +11,7 @@ function Home() {
 
 
   return (
+    
     <section className="dark:bg-black-500  flex flex-wrap  justify-center gap-3 sm:gap-[200px]  text-white w-full h-screen relative  flex-row items-center ">
      
 

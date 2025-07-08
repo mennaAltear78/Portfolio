@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  font-family: "Inter", serif;
+  margin: 0;
+  padding: 0;
+  /* The element stays the size you set, without unexpected growth no extra size added*/
+  box-sizing: border-box;
+}
+.logo_text {
+  font-weight: bold;
+}
+
+body {
+ 
+  
+}
+#chatbot_Toggler{
+  position: fixed;
+  bottom: 30px;
+  right: 35px;
+  border:none;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #463280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+ }
+ #chatbot_Toggler span{
+  position: absolute;
+    color: white;
+ }
+.chatbot_popup {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  bottom:90px ;
+  right:70px ;
+  width: 420px;
+  transform: scale(0.2);
+  background-color: white;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 138px 10px  rgba(0, 0, 0, 0.308);
+  /* the shape it fade like */
+  transform-origin: bottom right; 
+  transition: all 0.1s ease;
+  z-index: 1000;
+  color: black;
+}
+.container.show-chatbot .chatbot_popup{
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
+} 
+.container.show-chatbot #chatbot_Toggler{
+  transform: rotate(90deg);
+}
+.container.show-chatbot #chatbot_Toggler span:first-child{
+    opacity: 0;
+}
+.container.show-chatbot #chatbot_Toggler span:last-child{
+    opacity: 1;
+}
+.chatbotHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6d4fc2;
+  padding: 10px;
+}
+.Header_Info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Header_Info svg {
+  /* ???? */
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;
+  padding: 6px;
+  border-radius: 50%;
+  fill: #6d4fc2;
+  background-color: white;
+}
+.chatbotHeader button {
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  padding: 4px;
+  color: white;
+  background-color: #4c3686;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.chatbotHeader button:hover{
+  background: #5e3bbeb7;
+}
+.chat_body{
+  height: 460px;
+  overflow-y: auto;
+  padding:25px 20px;
+  margin-bottom: 50px;
+  scrollbar-width: thin;
+  scrollbar-color: #5e3bbe57 transparent;
+}
+.chat_body .message{
+  display: flex;
+  gap: 10px;
+}
+.chat_body .message svg{
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;
+  padding: 6px;
+  border-radius: 50%;
+  fill: #ffffff;
+  background-color:#6d4fc2;
+  /* to make icon down the div */
+  align-self: flex-end; 
+}
+.bot-message  .message-text{
+    background-color: #f6f2ff;
+    border-radius: 13px 13px 13px 0.1px;
+    padding: 10px;
+    /* word-wrap: break-word;
+    white-space: pre-line; */
+    font-size: 0.95rem;
+}
+.user-message .message-text{
+  background-color: #6d4fc2;
+  color: white;
+  border-radius: 13px 13px 0.1px 13px;
+  padding: 10px;
+
+
+}
+.user-message{
+  /* to make the message of the user at the end of the page width */
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.message-text{
+  max-width:50%
+}
+.chatbotFooter{
+  width: 90%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  margin: 0px 0px 10px 20px;
+  /* margin-left: 0px; */
+  border: 1px solid rgba(83, 82, 82, 0.178);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+.chat-form { 
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+.chat-form input{ 
+  width: 80%;
+  border: none;
+  /* important to remove the outline in focus */
+  outline: none;
+  }
+ .chat-form button{
+  border-radius: 15px;
+  
+  border: none;
+  color: white;
+  display: none;
+  background-color: #463280;
+  font-size: 20px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.2 ease ;
+ }
+ .chat-form button:hover{
+  background-color: #6846cc;
+ }
+ .chatbotFooter:focus-within{
+
+  outline: 2px solid #6d4fc2;
+
+ }
+ /* to display the button when it valid the form */
+ .chat-form input:valid~button {
+  display: block;
+ }
+ .chat_body::-webkit-scrollbar-thumb{
+  background: #b91313; /* لون المسار */
+  border-radius: 10px;
+ }
+ button:disabled{
+  background-color: gray;
+ }
+ button:hover:disabled{
+  background-color: gray;
+  cursor:default;
+ }
+ /* @media (max-width:520px){
+
+   #chatbot
+
+
+
+
+
+
+
+ } */

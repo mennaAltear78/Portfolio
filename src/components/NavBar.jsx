@@ -24,7 +24,8 @@ useEffect(() => {
 }, [ctx.mode]); // يتم تشغيل الـ console.log عند تغيير mode
 
   return (
-    <header className="header">
+    <div>
+        <header className="header">
       <NavLink
         to="./"
         className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
@@ -33,7 +34,7 @@ useEffect(() => {
           MA
         </p>
       </NavLink>
-      <nav className=" text-black gap-10 p-3 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md">
+      <nav className=" text-black gap-10 p-3 h-10 rounded-lg sm:text-[14px] text-[10px] sm:ml-2 ml-[20px] bg-white items-center justify-center flex font-bold shadow-md">
         <NavLink
           to="/about"
           className={({ isActive }) =>
@@ -71,6 +72,9 @@ useEffect(() => {
         </div>
       </nav>
     </header>
+    
+    </div>
+  
   );
 }
 
