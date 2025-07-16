@@ -37,7 +37,7 @@ function Contact() {
     }, 4000);
   }
   return (
-    <section className='relative h-screen sm:w-[100vw] dark:bg-black-500   sm:flex lg:flex-row flex-row  max-container'>
+    <section className='relative h-screen  sm:w-[100vw] dark:bg-black-500   sm:flex lg:flex-row flex-row  max-container'>
       <div >
         <h1 className='dark:text-white head-text'>
           Get in touch
@@ -50,7 +50,7 @@ function Contact() {
           <input
             type='text'
             name='name'
-            className="border h-10 sm:w-[500px] shadow-lg w-[300px] focus:outline-none border-gray-300 focus:border-purple-200 focus:ring-2 focus:ring-purple-900 rounded-md p-2"
+            className="border h-10 sm:w-[500px] text-gray-700  shadow-lg w-[300px] focus:outline-none border-gray-300 focus:border-purple-200 focus:ring-2 focus:ring-purple-900 rounded-md p-2"
             placeholder='Menna'
             required
             onChange={handleChange}
@@ -63,7 +63,7 @@ function Contact() {
           <input
             type='email'
             name='email'
-            className="border h-10 sm:w-[500px] focus:outline-none shadow-lg w-[300px] border-gray-300 focus:border-purple-200 focus:ring-2 focus:ring-purple-900 rounded-md p-2"
+            className="border h-10 sm:w-[500px] text-gray-700  focus:outline-none shadow-lg w-[300px] border-gray-300 focus:border-purple-200 focus:ring-2 focus:ring-purple-900 rounded-md p-2"
             placeholder='Menna@gmail.com'
             required
             onChange={handleChange}
@@ -78,7 +78,7 @@ function Contact() {
             required
             onChange={handleChange}
             value={form.message}
-            placeholder='write your thoughts here...' className='shadow-lg p-3  sm:w-[500px] w-[300px] border focus:outline-none border-gray-300 focus:border-purple-200 focus:ring-2 focus:ring-purple-900 rounded-md' />
+            placeholder='write your thoughts here...' className='shadow-lg p-3 text-gray-700  sm:w-[500px] w-[300px] border focus:outline-none border-gray-300 focus:border-purple-200 focus:ring-2 focus:ring-purple-900 rounded-md' />
           <button disabled={isloading} className='transform scale-95 transition-transform duration-500 hover:scale-100 w-[320px] sm:w-[520px] h-[45px] bg-gradient-to-br from-purple-800  via-purple-250 to-purple-400  rounded text-white ml-[-9px]  '>
             {isloading ? 'sending....' : 'Send Message'}
           </button>

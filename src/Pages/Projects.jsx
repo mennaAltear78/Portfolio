@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 
 function Projects() {
   return (
-    <div className='max-container dark:bg-black-500'>
+    <div className='max-container dark:bg-black-500 '>
       <div className='mb-10'>
         <p className='dark:text-[white] font-bold text-[25px] mb-5'>
-          projects
+          Projects
         </p>
         <p className='dark:text-gray-300 text-gray-500 mt-[20px]'>
           I’ve built a range of projects that helped me grow as a developer — from a full vendor management dashboard using React, and JWT, to a 3D interactive portfolio with Three.js, and even a hand pose recognition app using TensorFlow.js.<br />
