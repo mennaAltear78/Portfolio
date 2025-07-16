@@ -5,9 +5,9 @@ import ThreeD from "../assets/Screenshot 2025-03-18 164508 (1).png"
 import chatbot from "../assets/Screenshot 2025-03-24 151536.png"
 import handpose from "../assets/handpose.jpg"
 import todo from "../assets/todo.jpg"
+import ecommerce from "../assets/ecommerce.png"
 
 import {
-    
     car,
     contact,
     css,
@@ -181,7 +181,14 @@ export const projects = [
         description: 'The project includes interactive elements such as dark/light mode, sky and plane movements, and a popup message when reaching a specific island. Since the 3D project was heavy on Vercel and difficult to deploy, You can see more detail in GitHub.',
         link: 'https://github.com/mennaAltear78/3D_Website',
     },
-
+  {
+        iconUrl: estate,
+        imge:ecommerce,
+        theme: 'btn-back-pink',
+        name: 'E-Commerce (React.js)',
+        description: 'A modern, scalable, and fully responsive E-Commerce Web Application built using React.js, Redux Toolkit, Clerk Authentication, and more. This project offers a seamless user experience, from browsing products to authentication and managing a shopping cart.',
+        link: 'https://e-commerce-ola-new-8thm.vercel.app',
+    },
     {
         iconUrl: estate,
         imge:handpose,
