@@ -204,7 +204,7 @@ export const projects = [
         theme: 'btn-back-yellow',
         name: 'Full stack ToDo App (Next.js)',
         description: 'A fullstack ToDo application built with Next.js (App Router) and TypeScript, featuring authentication via Clerk, data validation with Zod, and full CRUD functionality for each user. Tasks are isolated per user and cached on the client using SWR or React Query for optimal performance',
-        link: 'todo-list-full-stack-vn6s.vercel.app/',
+        link: 'https://todo-list-full-stack-vn6s.vercel.app/',
     }, 
         {
         iconUrl: estate,
