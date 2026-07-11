@@ -1,4 +1,3 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
 import screen from "../assets/Screenshot 2025-03-24 135635.png"
 import Authen from "../assets/Screenshot 2025-03-24 140848.png"
 import ThreeD from "../assets/Screenshot 2025-03-18 164508 (1).png"
@@ -12,7 +11,6 @@ import {
     contact,
     css,
     estate,
-    express,
     git,
     github,
     html,
@@ -20,22 +18,19 @@ import {
     linkedin,
     mongodb,
     motion,
-    mui,
     nextjs,
-    nodejs,
-    pricewise,
+  
     react,
     redux,
-    sass,
     snapgram,
     summiz,
     tailwindcss,
-    threads,
     typescript,
+    docker,
     java,
+    fastapi,
     // prizma
 } from "../assets/icons";
-import { image } from "framer-motion/client";
 
 export const skills = [
     {
@@ -48,6 +43,11 @@ export const skills = [
         imageUrl: git,
         name: "Git",
         type: "Version Control",
+    },
+    {
+        imageUrl:docker,
+        name:"Docker",
+        type:""
     },
     {
         imageUrl: github,
@@ -69,6 +69,12 @@ export const skills = [
         imageUrl: java,
         name: "Java",
         type: "",
+    },
+    {
+        imageUrl:fastapi,
+name:"FastApi",
+type:""
+
     },
     {
         imageUrl: motion,
@@ -166,74 +172,73 @@ export const socialLinks = [
 export const projects = [
 
     {
-        iconUrl: snapgram ,
+        iconUrl: snapgram,
         imge:Authen,
         theme: 'btn-back-green',
-        name: 'Vendor (React.js)',
-        description: 'Vendor Application – A management system for multiple hotels (Work in Progress). Completed authentication with access & refresh tokens, implemented Axios interceptors for secure API requests, and added vendor creation functionality. Features React Router for navigation and styled with CSS Modules & Tailwind CSS.',
+        name: 'Vendor Management Platform',
+        description: 'Architected a hotel and tour management dashboard with secure Access/Refresh token authentication, role-based access control, and full CRUD operations against a REST API. The experience also included paginated, filterable, and searchable listings plus real-time vendor and tour statistics visualizations.',
         link: 'https://vendor-dun-kappa.vercel.app',
     },
     {
         iconUrl: car,
         imge:ThreeD,
         theme: 'btn-back-blue',
-        name: '3D website (React.jS & Three.js)',
-        description: 'The project includes interactive elements such as dark/light mode, sky and plane movements, and a popup message when reaching a specific island. Since the 3D project was heavy on Vercel and difficult to deploy, You can see more detail in GitHub.',
+        name: '3D Interactive Portfolio',
+        description: 'Built a WebGL-powered 3D interactive portfolio with Three.js, featuring dynamic models that respond to dark/light theme changes and smooth transition animations for a more immersive experience.',
         link: 'https://github.com/mennaAltear78/3D_Website',
     },
-  {
+    {
         iconUrl: estate,
         imge:ecommerce,
         theme: 'btn-back-pink',
-        name: 'E-Commerce (React.js)',
-        description: 'A modern, scalable, and fully responsive E-Commerce Web Application built using React.js, Redux Toolkit, Clerk Authentication, and more. This project offers a seamless user experience, from browsing products to authentication and managing a shopping cart.',
+        name: 'E-Commerce Platform',
+        description: 'Created a modern, responsive e-commerce application with React.js, Redux Toolkit, Clerk authentication, and a polished shopping experience from product browsing to cart management.',
         link: 'https://e-commerce-ola-new-8thm.vercel.app',
     },
     {
         iconUrl: estate,
         imge:handpose,
-
         theme: 'btn-back-black',
-        name: 'Hand Pose recognition (React.js)',
-        description: 'A real-time hand pose estimation app built with React.js, TensorFlow.js, and JavaScript. The app detects hand landmarks from webcam input and renders a dynamic 3D mesh overlay in the browser — all powered by machine learning in the browser.',
+        name: 'Real-Time Hand Pose Recognition',
+        description: 'Built a real-time hand pose estimation app using React.js, TensorFlow.js, and JavaScript, detecting hand landmarks from webcam input and rendering a live 3D mesh overlay in the browser.',
         link: 'https://hand-pose-ai-seven.vercel.app/',
     },
     {
         iconUrl: estate,
         imge:todo,
         theme: 'btn-back-yellow',
-        name: 'Full stack ToDo App (Next.js)',
-        description: 'A fullstack ToDo application built with Next.js (App Router) and TypeScript, featuring authentication via Clerk, data validation with Zod, and full CRUD functionality for each user. Tasks are isolated per user and cached on the client using SWR or React Query for optimal performance',
+        name: 'Full-Stack Task Management App',
+        description: 'Engineered a type-safe full-stack task management application with Next.js and TypeScript, featuring Clerk authentication, Zod validation, Prisma/MongoDB persistence, and a clean user-focused workflow.',
         link: 'https://todo-list-full-stack-vn6s.vercel.app/',
-    }, 
-        {
+    },
+    {
         iconUrl: estate,
         imge:chatbot,
         theme: 'btn-back-pink',
-        name: 'ChatBot (React.js)',
-        description: 'Designed and implemented an AI-powered ChatBot using the Gemini API to handle real-time customer queries for a small restaurant, improving service efficiency and user engagement with intelligent and context-aware responses',
+        name: 'AI ChatBot Experience',
+        description: 'Designed and implemented an AI-powered chatbot using the Gemini API to handle real-time customer queries and improve service efficiency with context-aware responses.',
         link: 'https://chat-bot-api-eight.vercel.app',
-    },   {
+    },
+    {
         iconUrl:summiz,
         imge:screen,
         theme: 'btn-back-red',
-        name: 'Tourism website react (React.js)',
-        description: 'Static Website with Routing & Dark/Light Mode – A simple static website with React Router for navigation and Dark/Light mode using useContext for state management and CSS Modules for styling.',
+        name: 'Tourism Website',
+        description: 'Built a responsive tourism website with React Router, dark/light mode support, and a clean, content-focused UI for showcasing travel experiences.',
         link: 'https://tourism-web-react-js.vercel.app',
     },
-
-        {
+    {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Information Retrieval System (java)',
-        description: 'Determining document relevance for search engines or similar systems. Evaluation Metrics: Measuring the effectiveness of search algorithms. Educational Purposes: Demonstrating the implementation of search models and ranking systems.',
+        name: 'Information Retrieval System',
+        description: 'Implemented an information retrieval system for evaluating document relevance, search effectiveness, and ranking concepts in an educational and technical setting.',
         link: 'https://github.com/mennaAltear78/Information-Retrieval-.git',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
-        name: 'Turing Machine Simulator (java)',
-        description: 'Demonstrating the working of a Turing Machine. Learning Theoretical Computation: Understanding concepts of computation, state transitions, and tape manipulation.',
+        name: 'Turing Machine Simulator',
+        description: 'Developed a configurable Turing Machine simulator supporting custom transition functions, state management, and input validation for computational theory demonstrations.',
         link: 'https://github.com/mennaAltear78/Information-Retrieval-',
     }
 ];

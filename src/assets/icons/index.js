@@ -15,7 +15,9 @@ import sass from './sass.svg'
 import tailwindcss from './tailwindcss.svg'
 import typescript from './typescript.svg'
 import linkedin from './linkedin.svg'
+import fastapi from './fastapi.svg'
 import twitter from './twitter.svg'
+// import prizma from './'
 import car from './car.svg'
 import estate from './estate.svg'
 import pricewise from './pricewise.svg'
@@ -25,8 +27,10 @@ import threads from './threads.svg'
 import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
+import docker from './docker.svg'
 import soundoff from './soundoff.png'
 import java from './icons8-java.svg'
+
 
 export {
     css,
@@ -46,6 +50,8 @@ export {
     tailwindcss,
     typescript,
     linkedin,
+fastapi,
+    docker,
     twitter,
     car,
     estate,
@@ -56,6 +62,7 @@ export {
     arrow,
     contact,
     soundon,
+    // prizma,
     soundoff,
     java
 }
