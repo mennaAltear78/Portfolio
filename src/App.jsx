@@ -5,17 +5,20 @@ import About from './Pages/About'
 import Projects from './Pages/Projects'
 import Contact from './Pages/Contact'
 import MainChatBot from "./components/MainChatBot"
+
 function App() {
   return (
-    <main className="dark:bg-black-500 bg-white ">
+    <main className="bg-[#0A0714] text-[#F5F3FF] min-h-screen font-body selection:bg-[#7C3AED]/30 selection:text-white">
       <Router>
-<MainChatBot>
-        <Routes>
-          <Route path="/" element={<Home  />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes></MainChatBot>
+        <NavBar />
+        <MainChatBot>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </MainChatBot>
       </Router>
     </main>
   );
