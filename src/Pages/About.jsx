@@ -1,6 +1,6 @@
 import React from "react";
 import { skills } from "./index";
-import { GraduationCap, Briefcase, Code2, Server, Activity, Database } from "lucide-react";
+import { GraduationCap, Briefcase, Code2, Server, Activity, Database, Radio } from "lucide-react";
 
 // Highlight specific technical keywords in experience bullets
 const HIGHLIGHTS = [
@@ -207,33 +207,30 @@ Computer Science graduate and Software Engineer with professional experience bui
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5 hover:border-[#3B82F6]/30 transition-colors">
               <Code2 className="w-6 h-6 text-[#3B82F6] mb-4" />
               <h3 className="font-display font-semibold text-base text-white mb-2">Frontend Engineering</h3>
-              <p className="font-body text-xs text-[#F5F3FF]/60 mb-4">React • TypeScript • Next.js</p>
-            </div>
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-         <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5 hover:border-[#A78BFA]/30 transition-colors">
+<p className="font-body text-xs text-[#F5F3FF]/60 mb-4">
+  React • TypeScript • JavaScript • Next.js • Redux • Zustand • Tailwind CSS • REST APIs
+</p>            </div>
+             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5 hover:border-[#A78BFA]/30 transition-colors">
   <Radio className="w-6 h-6 text-[#A78BFA] mb-4" />
   <h3 className="font-display font-semibold text-base text-white mb-2">
     Real-Time & Streaming
   </h3>
 <p className="font-body text-xs text-[#F5F3FF]/60 mb-4">
-  LiveKit • Participant Control • Camera & Audio • Screen Sharing • Chat • Virtual Backgrounds • Streaming
+  LiveKit • WebRTC • Participant Control • Media APIs • Screen Sharing • Chat • Virtual Backgrounds • Streaming
 </p>
-</div>
+            </div>
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5 hover:border-[#10B981]/30 transition-colors">
               <Server className="w-6 h-6 text-[#10B981] mb-4" />
               <h3 className="font-display font-semibold text-base text-white mb-2">Full-Stack & APIs</h3>
               <p className="font-body text-xs text-[#F5F3FF]/60 mb-4">FastAPI • REST APIs • Authentication</p>
             </div>
-            <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5 hover:border-[#F59E0B]/30 transition-colors">
-              <Activity className="w-6 h-6 text-[#F59E0B] mb-4" />
-              <h3 className="font-display font-semibold text-base text-white mb-2">Real-Time Systems</h3>
-              <p className="font-body text-xs text-[#F5F3FF]/60 mb-4">WebRTC • LiveKit • Media APIs</p>
-            </div>
+
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5 hover:border-[#7C3AED]/30 transition-colors">
               <Database className="w-6 h-6 text-[#7C3AED] mb-4" />
               <h3 className="font-display font-semibold text-base text-white mb-2">Machine Learning</h3>
-              <p className="font-body text-xs text-[#F5F3FF]/60 mb-4">Python • Scikit-learn • Data Analysis</p>
-            </div>
+<p className="font-body text-xs text-[#F5F3FF]/60 mb-4">
+  Python • Scikit-learn • Pandas • NumPy • Classification • Regression • Clustering • NLP
+</p>            </div>
           </div>
         </div>
 
