@@ -209,6 +209,16 @@ Computer Science graduate and Software Engineer with professional experience bui
               <h3 className="font-display font-semibold text-base text-white mb-2">Frontend Engineering</h3>
               <p className="font-body text-xs text-[#F5F3FF]/60 mb-4">React • TypeScript • Next.js</p>
             </div>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+         <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5 hover:border-[#A78BFA]/30 transition-colors">
+  <Radio className="w-6 h-6 text-[#A78BFA] mb-4" />
+  <h3 className="font-display font-semibold text-base text-white mb-2">
+    Real-Time & Streaming
+  </h3>
+<p className="font-body text-xs text-[#F5F3FF]/60 mb-4">
+  LiveKit • Participant Control • Camera & Audio • Screen Sharing • Chat • Virtual Backgrounds • Streaming
+</p>
+</div>
             <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5 hover:border-[#10B981]/30 transition-colors">
               <Server className="w-6 h-6 text-[#10B981] mb-4" />
               <h3 className="font-display font-semibold text-base text-white mb-2">Full-Stack & APIs</h3>
