@@ -12,6 +12,7 @@ import airline from "../assets/images/airline.png"
 import consumer from "../assets/images/consumer.png"
 import house from "../assets/images/house.png"
 import ml_projects from "../assets/images/ml_projects.png"
+import flyassist from "../assets/images/flyassist.png"
 
 import {
     contact,
@@ -53,6 +54,18 @@ export const socialLinks = [
 ];
 
 export const featuredProjects = [
+    {
+        name: 'FlyAssist',
+        category: 'Full-Stack • Enterprise Dashboard',
+        technologies: ['React 19', 'TypeScript', 'Vite', 'Tailwind CSS', 'Recharts', 'ApexCharts', 'Zustand', 'React Router v7', 'i18next', 'Lucide React'],
+        problem: 'International airports lack a unified digital operations hub to manage PRM (Persons with Reduced Mobility) assistance, staff timeline allocations, real-time transit analytics, and bilingual (AR/EN) passenger communication in a single platform.',
+        solution: 'Built an enterprise-grade airport operations dashboard featuring a full PRM booking system, interactive staff timeline grid, AI-powered ML forecasting overlays, real-time analytics with Recharts/ApexCharts, bilingual RTL/LTR i18n, and a multi-modal reporting hub — all within a fully responsive React 19 architecture.',
+        challenges: 'Synchronizing real-time staff allocation state across an interactive drag-and-drop timeline grid while supporting full RTL/LTR layout switching without component remounts, and rendering virtualized large passenger datasets without performance degradation.',
+        decisions: 'Adopted Zustand for lightweight cross-component state management, react-virtuoso for efficient large-table rendering, and i18next with dynamic HTML dir attribute toggling for seamless language switching between Arabic and English.',
+        image: flyassist,
+        github: 'https://github.com/mennaAltear78/platform',
+        demo: 'https://platform-bnat.vercel.app/calendar'
+    },
     {
         name: 'End-to-End Customer Intelligence Platform',
         category: 'Full-Stack • Machine Learning',
