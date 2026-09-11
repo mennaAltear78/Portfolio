@@ -78,23 +78,10 @@ export const featuredProjects = [
         github: 'https://github.com/mennaAltear78/customer-segmentation',
         demo: "https://fcustomer-segmentation12menna.vercel.app"
     },
- 
     {
-        name: 'Credit Card Fraud Detection',
-        category: 'Machine Learning • Full-Stack',
-        technologies: ['Python', 'FastAPI', 'React.js', 'Scikit-learn'],
-        problem: 'Detecting fraudulent financial transactions in highly imbalanced datasets in real time before payment authorization.',
-        solution: 'Developed an ML pipeline for highly imbalanced transaction data, integrating a trained Fraud Prediction API via FastAPI, with a React interface for visualization.',
-        challenges: 'Handling severe class imbalance without over-fitting while ensuring rapid inference latency.',
-        decisions: 'Evaluated classification performance using Precision, Recall, F1-score, and PR-AUC, deploying a lightweight FastAPI inference container.',
-        image: fraud,
-        github: 'https://github.com/mennaAltear78/Credit_card_fraud_detection',
-        demo: "https://credit-fraud-frontend-menna78.vercel.app/"
-    },
-       {
         name: 'Vendor Management Platform',
-        category: 'Full-Stack',
-        technologies: ['React.js', 'TypeScript', 'FastAPI', 'JWT Auth', 'REST APIs', 'Tailwind CSS'],
+        category: 'Front-End',
+        technologies: ['React.js', 'TypeScript', 'JWT Auth', 'REST APIs', 'Tailwind CSS'],
         problem: 'Managing multi-vendor hotel and tour operations requires robust role-based access control, paginated listing searches, and real-time vendor activity tracking.',
         solution: 'Architected a comprehensive administrative dashboard with secure Access/Refresh token authentication, full CRUD operations against REST APIs, and paginated data tables.',
         challenges: 'Managing secure token refresh cycles seamlessly on API request interceptors without interrupting active user workflows or state.',
@@ -138,6 +125,19 @@ export const projects = [
     //     image: chatbot,
     //     link: 'https://chat-bot-api-eight.vercel.app'
     // },
+    {
+        name: 'Credit Card Fraud Detection',
+        category: 'Machine Learning • Full-Stack',
+        technologies: ['Python', 'FastAPI', 'React.js', 'Scikit-learn'],
+        description: 'Developed an ML pipeline for highly imbalanced transaction data, integrating a trained Fraud Prediction API via FastAPI, with a React interface for real-time fraud visualization.',
+        problem: 'Detecting fraudulent financial transactions in highly imbalanced datasets in real time before payment authorization.',
+        solution: 'Developed an ML pipeline for highly imbalanced transaction data, integrating a trained Fraud Prediction API via FastAPI, with a React interface for visualization.',
+        challenges: 'Handling severe class imbalance without over-fitting while ensuring rapid inference latency.',
+        decisions: 'Evaluated classification performance using Precision, Recall, F1-score, and PR-AUC, deploying a lightweight FastAPI inference container.',
+        image: fraud,
+        github: 'https://github.com/mennaAltear78/Credit_card_fraud_detection',
+        demo: "https://credit-fraud-frontend-menna78.vercel.app/"
+    },
     {
         name: 'E-Commerce Platform',
         category: 'Frontend',
