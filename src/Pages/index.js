@@ -66,6 +66,18 @@ export const featuredProjects = [
         github: 'https://github.com/mennaAltear78/platform',
         demo: 'https://platform-bnat.vercel.app/calendar'
     },
+        {
+        name: 'Vendor Management Platform',
+        category: 'Front-End',
+        technologies: ['React.js', 'TypeScript', 'JWT Auth', 'REST APIs', 'Tailwind CSS'],
+        problem: 'Managing multi-vendor hotel and tour operations requires robust role-based access control, paginated listing searches, and real-time vendor activity tracking.',
+        solution: 'Architected a comprehensive administrative dashboard with secure Access/Refresh token authentication, full CRUD operations against REST APIs, and paginated data tables.',
+        challenges: 'Managing secure token refresh cycles seamlessly on API request interceptors without interrupting active user workflows or state.',
+        decisions: 'Implemented custom fetch interceptor middleware for dual-token refresh, modular table component with server-side pagination, and accessible multi-step forms.',
+        image: Authen,
+        github: 'https://github.com/mennaAltear78',
+        demo: 'https://vendor-dun-kappa.vercel.app'
+    },
     {
         name: 'End-to-End Customer Intelligence Platform',
         category: 'Full-Stack • Machine Learning',
@@ -78,18 +90,7 @@ export const featuredProjects = [
         github: 'https://github.com/mennaAltear78/customer-segmentation',
         demo: "https://fcustomer-segmentation12menna.vercel.app"
     },
-    {
-        name: 'Vendor Management Platform',
-        category: 'Front-End',
-        technologies: ['React.js', 'TypeScript', 'JWT Auth', 'REST APIs', 'Tailwind CSS'],
-        problem: 'Managing multi-vendor hotel and tour operations requires robust role-based access control, paginated listing searches, and real-time vendor activity tracking.',
-        solution: 'Architected a comprehensive administrative dashboard with secure Access/Refresh token authentication, full CRUD operations against REST APIs, and paginated data tables.',
-        challenges: 'Managing secure token refresh cycles seamlessly on API request interceptors without interrupting active user workflows or state.',
-        decisions: 'Implemented custom fetch interceptor middleware for dual-token refresh, modular table component with server-side pagination, and accessible multi-step forms.',
-        image: Authen,
-        github: 'https://github.com/mennaAltear78',
-        demo: 'https://vendor-dun-kappa.vercel.app'
-    },
+
 ];
 
 export const projects = [

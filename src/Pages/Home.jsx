@@ -83,7 +83,7 @@ function Home() {
             </h2>
             
             <div className="font-mono-label text-xs sm:text-sm text-[#F5F3FF]/50 uppercase tracking-widest mb-6">
-              Full-Stack • Real-Time • Machine Learning
+Front-End Developer • ML Knowledge
             </div>
 
             <p className="font-body text-[#F5F3FF]/80 text-lg sm:text-xl lg:text-2xl min-h-[3rem] mb-10">
