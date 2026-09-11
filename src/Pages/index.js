@@ -56,7 +56,7 @@ export const socialLinks = [
 export const featuredProjects = [
     {
         name: 'FlyAssist',
-        category: 'Full-Stack • Enterprise Dashboard',
+        category: 'FrontEnd • Enterprise Dashboard',
         technologies: ['React 19', 'TypeScript', 'Vite', 'Tailwind CSS', 'Recharts', 'ApexCharts', 'Zustand', 'React Router v7', 'i18next', 'Lucide React'],
         problem: 'International airports lack a unified digital operations hub to manage PRM (Persons with Reduced Mobility) assistance, staff timeline allocations, real-time transit analytics, and bilingual (AR/EN) passenger communication in a single platform.',
         solution: 'Built an enterprise-grade airport operations dashboard featuring a full PRM booking system, interactive staff timeline grid, AI-powered ML forecasting overlays, real-time analytics with Recharts/ApexCharts, bilingual RTL/LTR i18n, and a multi-modal reporting hub — all within a fully responsive React 19 architecture.',
